@@ -1,0 +1,235 @@
+@charset "UTF-8";
+html {
+  font-size: 62.5%; }
+
+body {
+  position: relative; }
+
+* {
+  font-family: jf-jinxuan, 微軟正黑體;
+  color: #606060; }
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  font-weight: bold; }
+
+nav.navbar {
+  transition: 0.5s;
+  padding: 58px 42px 0; }
+  nav.navbar li {
+    padding: 0px 20px; }
+    nav.navbar li:last-child {
+      padding-right: 0; }
+  nav.navbar a {
+    padding: 0;
+    color: #606060; }
+    nav.navbar a::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 50%;
+      width: 0;
+      height: 2px;
+      background-color: #333;
+      transition: width 0.25s ease-in-out; }
+  nav.navbar .navbar-nav > .active > a {
+    color: #606060;
+    background-color: transparent; }
+    nav.navbar .navbar-nav > .active > a:hover, nav.navbar .navbar-nav > .active > afocus {
+      color: #333;
+      background-color: transparent; }
+  nav.navbar .navbar-nav > .active > a, nav.navbar .navbar-nav a:hover {
+    color: #333;
+    background-color: transparent; }
+    nav.navbar .navbar-nav > .active > a::before, nav.navbar .navbar-nav a:hover::before {
+      width: 100%; }
+  nav.navbar.navbar-top {
+    background-color: transparent;
+    border: 0;
+    box-shadow: none; }
+    nav.navbar.navbar-top .active > a {
+      color: #333; }
+    nav.navbar.navbar-top a {
+      transition: 0.5s; }
+    nav.navbar.navbar-top .navbar-toggle {
+      border-color: #fff; }
+      nav.navbar.navbar-top .navbar-toggle .icon-bar {
+        background-color: #fff; }
+  nav.navbar .navbar-brand {
+    padding: 0;
+    margin-left: 0 !important; }
+    nav.navbar .navbar-brand .logo_content p {
+      display: inline-block;
+      margin: 0; }
+    nav.navbar .navbar-brand .logo_content .sub {
+      display: inline-block;
+      padding-left: 20px;
+      font-size: 1.4rem;
+      color: #9C9C9C; }
+  nav.navbar .navbar-toggle {
+    border-color: #333;
+    border-radius: 0; }
+    nav.navbar .navbar-toggle .icon-bar {
+      background-color: #333; }
+
+section {
+  text-align: center; }
+  section p {
+    font-size: 1.4rem; }
+
+section#works .work-item {
+  padding: 15px;
+  background-color: transparent;
+  overflow: hidden; }
+  section#works .work-item img {
+    width: 100%;
+    height: auto;
+    display: block; }
+  section#works .work-item .work-item-info {
+    position: absolute;
+    top: 15px;
+    bottom: 15px;
+    left: 15px;
+    right: 15px;
+    color: #666;
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    opacity: 0;
+    overflow: hidden;
+    transition: opacity 0.25s ease-in-out; }
+    section#works .work-item .work-item-info .cell {
+      display: table;
+      width: 100%;
+      height: 100%; }
+    section#works .work-item .work-item-info .content {
+      display: table-cell;
+      vertical-align: middle; }
+      section#works .work-item .work-item-info .content h2 {
+        font-size: 2.4rem; }
+      section#works .work-item .work-item-info .content p {
+        line-height: 1.5; }
+      section#works .work-item .work-item-info .content a {
+        text-decoration: none; }
+    section#works .work-item .work-item-info .btn-work-item {
+      display: inline-block;
+      padding: 6px 15px;
+      color: #666;
+      border: 2px solid;
+      transition: 0.5s;
+      text-decoration: none; }
+      section#works .work-item .work-item-info .btn-work-item:hover {
+        background-color: #666;
+        border-color: #666;
+        color: #fff; }
+      section#works .work-item .work-item-info .btn-work-item:focus {
+        outline: none; }
+  section#works .work-item:hover .work-item-info {
+    opacity: 1; }
+section#works .work-detail {
+  text-align: left; }
+  section#works .work-detail .modal {
+    padding-top: 50px; }
+  section#works .work-detail .modal-content {
+    border: 0;
+    border-radius: 0; }
+  section#works .work-detail .modal-header {
+    position: relative;
+    padding: 18px 40px 20px;
+    background-color: #303030;
+    color: #fff; }
+    section#works .work-detail .modal-header .close {
+      position: absolute;
+      top: 6px;
+      right: -24px;
+      color: #fff;
+      font-size: 2rem;
+      opacity: 1; }
+    section#works .work-detail .modal-header .modal-title {
+      font-size: 2.2rem; }
+    section#works .work-detail .modal-header .modal-title + p {
+      margin-top: 3px; }
+  section#works .work-detail .modal-body {
+    color: #333;
+    font-size: 1.8rem;
+    text-align: center;
+    padding: 40px;
+    background-color: #f3f3f3; }
+    section#works .work-detail .modal-body img {
+      max-width: 100%; }
+  section#works .work-detail .modal-footer {
+    background-color: #303030;
+    color: #fff;
+    border: none;
+    text-align: center;
+    font-size: 1.4rem;
+    padding: 0 40px;
+    line-height: 1.5; }
+    section#works .work-detail .modal-footer a {
+      text-align: center;
+      color: #bd8924;
+      text-decoration: none; }
+      section#works .work-detail .modal-footer a:hover {
+        color: #a87920; }
+    section#works .work-detail .modal-footer p {
+      text-align: left;
+      margin: 20px 0; }
+
+footer {
+  background-color: #8b8b8b;
+  color: #fff;
+  text-align: center;
+  padding: 30px 0px; }
+  footer p {
+    margin-bottom: 0px; }
+
+@media screen and (max-width: 991px) {
+  .navbar-header {
+    float: none; }
+
+  .navbar-default .navbar-toggle {
+    display: block; }
+    .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+      background-color: transparent; }
+
+  .navbar-collapse {
+    margin: 20px 0;
+    float: none;
+    max-height: 320px;
+    background-color: #f8f8f8; }
+
+  .navbar-collapse.collapse {
+    display: none !important; }
+
+  .navbar-collapse.collapse.in {
+    display: block !important; }
+
+  .nav {
+    float: none !important;
+    margin: 7.5px -15px; }
+    .nav > li {
+      float: none; }
+      .nav > li > a {
+        display: inline-block; }
+
+  .nav.navbar-nav > li > a {
+    color: #606060; } }
+@media screen and (max-width: 767px) {
+  .container > .navbar-header {
+    margin-left: 0px; }
+
+  header#banner .container {
+    text-align: center;
+    color: #fff; }
+  header#banner .wrapper {
+    width: 100%; }
+  header#banner .btn-cv {
+    color: #fff; }
+
+  .skill-bar > .col-sm-3 > p {
+    font-size: 2.2rem;
+    margin-bottom: 30px; }
+
+  section#works .work-detail .modal-header > .close {
+    top: 24px;
+    right: 24px; } }
+
+/*# sourceMappingURL=style.css.map */
