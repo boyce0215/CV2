@@ -1,4 +1,4 @@
-@charset "UTF-8";
+@import url(http://fonts.googleapis.com/earlyaccess/notosanstc.css);
 html {
   font-size: 62.5%; }
 
@@ -6,7 +6,7 @@ body {
   position: relative; }
 
 * {
-  font-family: jf-jinxuan, 微軟正黑體;
+  font-family: "Noto Sans TC", sans-serif;
   color: #606060; }
 
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
@@ -15,61 +15,19 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 nav.navbar {
   transition: 0.5s;
   padding: 58px 42px 0; }
-  nav.navbar li {
-    padding: 0px 20px; }
-    nav.navbar li:last-child {
-      padding-right: 0; }
-  nav.navbar a {
-    padding: 0;
-    color: #606060; }
-    nav.navbar a::before {
-      content: "";
-      position: absolute;
-      left: 0;
-      top: 50%;
-      width: 0;
-      height: 2px;
-      background-color: #333;
-      transition: width 0.25s ease-in-out; }
-  nav.navbar .navbar-nav > .active > a {
-    color: #606060;
-    background-color: transparent; }
-    nav.navbar .navbar-nav > .active > a:hover, nav.navbar .navbar-nav > .active > afocus {
-      color: #333;
-      background-color: transparent; }
-  nav.navbar .navbar-nav > .active > a, nav.navbar .navbar-nav a:hover {
-    color: #333;
-    background-color: transparent; }
-    nav.navbar .navbar-nav > .active > a::before, nav.navbar .navbar-nav a:hover::before {
-      width: 100%; }
-  nav.navbar.navbar-top {
-    background-color: transparent;
-    border: 0;
-    box-shadow: none; }
-    nav.navbar.navbar-top .active > a {
-      color: #333; }
-    nav.navbar.navbar-top a {
-      transition: 0.5s; }
-    nav.navbar.navbar-top .navbar-toggle {
-      border-color: #fff; }
-      nav.navbar.navbar-top .navbar-toggle .icon-bar {
-        background-color: #fff; }
   nav.navbar .navbar-brand {
     padding: 0;
     margin-left: 0 !important; }
     nav.navbar .navbar-brand .logo_content p {
       display: inline-block;
-      margin: 0; }
+      margin: 0;
+      letter-spacing: 0.1rem; }
     nav.navbar .navbar-brand .logo_content .sub {
       display: inline-block;
       padding-left: 20px;
       font-size: 1.4rem;
-      color: #9C9C9C; }
-  nav.navbar .navbar-toggle {
-    border-color: #333;
-    border-radius: 0; }
-    nav.navbar .navbar-toggle .icon-bar {
-      background-color: #333; }
+      color: #9C9C9C;
+      letter-spacing: 0.15rem; }
 
 section {
   text-align: center; }
@@ -100,15 +58,15 @@ section#works .work-item {
       display: table;
       width: 100%;
       height: 100%; }
-    section#works .work-item .work-item-info .content {
+    section#works .work-item .work-item-info a.content {
       display: table-cell;
-      vertical-align: middle; }
-      section#works .work-item .work-item-info .content h2 {
+      vertical-align: middle;
+      color: #606060;
+      text-decoration: none; }
+      section#works .work-item .work-item-info a.content h2 {
         font-size: 2.4rem; }
-      section#works .work-item .work-item-info .content p {
+      section#works .work-item .work-item-info a.content p {
         line-height: 1.5; }
-      section#works .work-item .work-item-info .content a {
-        text-decoration: none; }
     section#works .work-item .work-item-info .btn-work-item {
       display: inline-block;
       padding: 6px 15px;
@@ -128,53 +86,64 @@ section#works .work-detail {
   text-align: left; }
   section#works .work-detail .modal {
     padding-top: 50px; }
+  section#works .work-detail .modal-backdrop {
+    height: 0 !important; }
+  section#works .work-detail .modal-dialog {
+    margin: 0;
+    width: 100%; }
   section#works .work-detail .modal-content {
     border: 0;
     border-radius: 0; }
   section#works .work-detail .modal-header {
     position: relative;
     padding: 18px 40px 20px;
-    background-color: #303030;
-    color: #fff; }
+    background-color: #fff;
+    color: #606060;
+    border-bottom: 0; }
     section#works .work-detail .modal-header .close {
       position: absolute;
-      top: 6px;
-      right: -24px;
-      color: #fff;
-      font-size: 2rem;
+      top: 24px;
+      right: 40px;
+      color: #606060;
+      font-size: 4rem;
       opacity: 1; }
     section#works .work-detail .modal-header .modal-title {
-      font-size: 2.2rem; }
+      font-size: 4rem;
+      display: inline-block;
+      letter-spacing: 0.2rem; }
     section#works .work-detail .modal-header .modal-title + p {
-      margin-top: 3px; }
+      margin-left: 32px;
+      display: inline-block;
+      font-size: 1.8rem;
+      color: #9C9C9C;
+      letter-spacing: 0.1rem; }
   section#works .work-detail .modal-body {
     color: #333;
     font-size: 1.8rem;
     text-align: center;
     padding: 40px;
-    background-color: #f3f3f3; }
+    background-color: #fff; }
     section#works .work-detail .modal-body img {
       max-width: 100%; }
-  section#works .work-detail .modal-footer {
-    background-color: #303030;
-    color: #fff;
-    border: none;
-    text-align: center;
-    font-size: 1.4rem;
-    padding: 0 40px;
-    line-height: 1.5; }
-    section#works .work-detail .modal-footer a {
-      text-align: center;
-      color: #bd8924;
-      text-decoration: none; }
-      section#works .work-detail .modal-footer a:hover {
-        color: #a87920; }
-    section#works .work-detail .modal-footer p {
-      text-align: left;
-      margin: 20px 0; }
+    section#works .work-detail .modal-body .info {
+      margin: 40px auto;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+      section#works .work-detail .modal-body .info .modal-subtitle {
+        font-size: 3.2rem;
+        letter-spacing: 0.15rem; }
+      section#works .work-detail .modal-body .info .modal-text > p {
+        font-size: 1.6rem;
+        text-align: left;
+        margin: 20px auto;
+        line-height: 2.4rem;
+        font-weight: 100; }
+    section#works .work-detail .modal-body .row {
+      margin-top: 40px; }
 
 footer {
-  background-color: #8b8b8b;
+  background-color: #9C9C9C;
   color: #fff;
   text-align: center;
   padding: 30px 0px; }

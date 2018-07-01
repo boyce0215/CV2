@@ -16,141 +16,84 @@ html(lang="zh-hant-tw")
 
       ga('create', 'UA-90594538-2', 'auto');
       ga('send', 'pageview');
-    script(type="text/javascript").
-      var _jf = _jf || [];_jf.push(['p','53653']);_jf.push(['_setFont','naughty','css',' .naughty']);_jf.push(['_setFont','naughty','alias','naughty']);_jf.push(['_setFont','naughty','weight',600]);_jf.push(['_setFont','jf-jinxuan-medium','css','.jf-jinxuan-medium']);_jf.push(['_setFont','jf-jinxuan-medium','alias','jf-jinxuan']);_jf.push(['_setFont','jf-jinxuan-medium','weight',500]);_jf.push(['_setFont','jf-jinxuan-ultralight','css','.jf-jinxuan-ultralight']);_jf.push(['_setFont','jf-jinxuan-ultralight','alias','jf-jinxuan']);_jf.push(['_setFont','jf-jinxuan-ultralight','weight',100]);_jf.push(['_setFont','jf-jinxuan-light','css','.jf-jinxuan-light']);_jf.push(['_setFont','jf-jinxuan-light','alias','jf-jinxuan']);_jf.push(['_setFont','jf-jinxuan-light','weight',200]);_jf.push(['_setFont','jf-jinxuan-book','css','.jf-jinxuan-book']);_jf.push(['_setFont','jf-jinxuan-book','alias','jf-jinxuan']);_jf.push(['_setFont','jf-jinxuan-book','weight',300]);_jf.push(['_setFont','jf-jinxuan-regular','css','.jf-jinxuan-regular']);_jf.push(['_setFont','jf-jinxuan-regular','alias','jf-jinxuan']);_jf.push(['_setFont','jf-jinxuan-regular','weight',400]);_jf.push(['_setFont','jf-liao','css','.jf-liao']);_jf.push(['_setFont','jf-liao','alias','jf-liao']);_jf.push(['_setFont','jf-liao','weight',500]);(function(f,q,c,h,e,i,r,d){var k=f._jf;if(k.constructor===Object){return}var l,t=q.getElementsByTagName("html")[0],a=function(u){for(var v in k){if(k[v][0]==u){if(false===k[v][1].call(k)){break}}}},j=/\S+/g,o=/[\t\r\n\f]/g,b=/^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g,g="".trim,s=g&&!g.call("\uFEFF\xA0")?function(u){return u==null?"":g.call(u)}:function(u){return u==null?"":(u+"").replace(b,"")},m=function(y){var w,z,v,u,x=typeof y==="string"&&y;if(x){w=(y||"").match(j)||[];z=t[c]?(" "+t[c]+" ").replace(o," "):" ";if(z){u=0;while((v=w[u++])){if(z.indexOf(" "+v+" ")<0){z+=v+" "}}t[c]=s(z)}}},p=function(y){var w,z,v,u,x=arguments.length===0||typeof y==="string"&&y;if(x){w=(y||"").match(j)||[];z=t[c]?(" "+t[c]+" ").replace(o," "):"";if(z){u=0;while((v=w[u++])){while(z.indexOf(" "+v+" ")>=0){z=z.replace(" "+v+" "," ")}}t[c]=y?s(z):""}}},n;k.push(["_eventActived",function(){p(h);m(e)}]);k.push(["_eventInactived",function(){p(h);m(i)}]);k.addScript=n=function(u,A,w,C,E,B){E=E||function(){};B=B||function(){};var x=q.createElement("script"),z=q.getElementsByTagName("script")[0],v,y=false,D=function(){x.src="";x.onerror=x.onload=x.onreadystatechange=null;x.parentNode.removeChild(x);x=null;a("_eventInactived");B()};if(C){v=setTimeout(function(){D()},C)}x.type=A||"text/javascript";x.async=w;x.onload=x.onreadystatechange=function(G,F){if(!y&&(!x.readyState||/loaded|complete/.test(x.readyState))){y=true;if(C){clearTimeout(v)}x.src="";x.onerror=x.onload=x.onreadystatechange=null;x.parentNode.removeChild(x);x=null;if(!F){setTimeout(function(){E()},200)}}};x.onerror=function(H,G,F){if(C){clearTimeout(v)}D();return true};x.src=u;z.parentNode.insertBefore(x,z)};a("_eventPreload");m(h);n(r,"text/javascript",false,3000)})(this,this.document,"className","jf-loading","jf-active","jf-inactive","//ds.justfont.com/js/stable/v/5.0.3/id/141890888191");
 
   body(data-spy="scroll" data-target=".navbar" data-offset="100")
     nav.navbar.navbar-top
       .container
         .navbar-header
-          button.navbar-toggle.collapsed(type="button" data-toggle="collapse" data-target="#headNav" aria-expanded="false" aria-controls="headNav")
-            span.sr-only Toggle navigation
-            span.icon-bar
-            span.icon-bar
-            span.icon-bar
-          a.navbar-brand.jf-jinxuan-book
+          a.navbar-brand
             .logo_content
-              p 張伯宇
-              p.sub UI/UX Desginer
-        #headNav.navbar-collapse.collapse
-          ul.nav.navbar-nav.navbar-right
-            li
-              a(href="#banner") All
-            li
-              a(href="#about") Web
-            li
-              a(href="#skills") App
+              p Po Yu Chang
+              p.sub UI/UX DESGINER
     section#works
       .container
         .row.work-items
-          .col-xs-12.col-sm-6.work-item.web
-            img(src="images/work-web1.png", alt="")
-            .work-item-info
-              .cell
-                .content
-                  h2 標準型網站
-                  p 一般傳統式的官方網站,使用HTML/CSS
-                  a.btn-work-item(href="#item1" data-toggle="modal") View Details
-          .col-xs-12.col-sm-6.work-item.web
-            img(src="images/work-web2.png", alt="")
-            .work-item-info
-              .cell
-                .content
-                  h2 網格型網頁
-                  p 以Grid layout的概念做設計,使用HTML/CSS/JavaScript
-                  a.btn-work-item(href="#item2" data-toggle="modal") View Details
-          .col-xs-12.col-sm-6.work-item.ui
+          .col-xs-12.col-sm-6.work-item
             img(src="images/work-ui1.png", alt="")
             .work-item-info
               .cell
-                .content
+                a.content(href="#item1" data-toggle="modal")
                   h2 Puzzle Time
                   p 一個簡潔、便利的時間管理app,可以用於一般行事或是專案管理使用
-                  a.btn-work-item(href="#item3" data-toggle="modal") View Details
-          .col-xs-12.col-sm-6.work-item.web
-            img(src="images/work-web3.png", alt="")
+          .col-xs-12.col-sm-6.work-item
+            img(src="images/work-ui2.png", alt="")
             .work-item-info
               .cell
-                .content
-                  h2 一頁式網站
-                  p 設計現在最常見的一頁式網站,使用HTML/CSS/JavaScript
-                  a.btn-work-item(href="#item4" data-toggle="modal") View Details
-          .col-xs-12.col-sm-6.work-item.web
+                a.content(href="#item2" data-toggle="modal")
+                  h2 艾蜜莉定存股
+                  p 針對股市中的定存股族群，所設計的一款App
+          .col-xs-12.col-sm-6.work-item
             img(src="images/work-web4.png", alt="")
             .work-item-info
               .cell
-                .content
-                  h2 作品集網站
-                  p 以自己作品集的網站為例,從設計到切版的過程紀錄,以Bootstrap為基礎做設計,此網頁為RWD響應式網站
-                  a.btn-work-item(href="#item5" data-toggle="modal") View Details
+                a.content(href="#item2" data-toggle="modal")
+                  h2 艾蜜莉定存股
+                  p 針對股市中的定存股族群，所設計的一款App
       .modal.fade.work-detail#item1(role="dialog")
-        .modal-dialog.modal-lg
+        .modal-dialog
           .modal-content
             .modal-header
               span.close(data-dismiss="modal") &times;
-              h4.modal-title 標準型網站
-              p #Web #Blog
+              h4.modal-title Puzzle Time
+              p ＃企劃發想＃流程規劃＃介面設計＃Pototype
             .modal-body
-              img(src="images/work-web1.png", alt="")
-            .modal-footer
-              a(href="http://e032386.github.io/standard-layout/" target="_blank") 連結
-              p 屬於一般傳統型的網站,有最新消息、文章等的區塊,此網頁沒有針對不同尺寸的螢幕做設計。
-              p 使用技術:HTML、CSS
+              .container
+                img(src="images/work-ui1.png", alt="")
+                .row.info
+                  .col-sm-4.modal-subtitle DESCRIPTION
+                  .col-sm-8.modal-text
+                    p 發想來自在工作的時候，時常無法將工作天數評估良好，造成同一時間的工作量暴增，甚至是接回來才發現其他部門的工作量早已不堪負荷。
+                    p 已現有的行事曆軟體都是以自己算時間，然後寫上事項，但其實很花時間；如果這時候，新增事項是可以用工作天數為估算，並把每一個事項的工作天數填完後再新增，這樣子所有案子的時程就一目瞭然，而且再新增事項上所花的時間也會少很多。
+                .row
+                  img.col-sm-6(src="images/ui-1.png", alt="")
+                  img.col-sm-6(src="images/ui-04.png", alt="")
+                .row
+                  img.col-sm-4(src="images/ui-02.gif", alt="")
+                  img.col-sm-4(src="images/ui-04.gif", alt="")
+                  img.col-sm-4(src="images/ui-08.gif", alt="")
       .modal.fade.work-detail#item2(role="dialog")
         .modal-dialog.modal-lg
           .modal-content
             .modal-header
               span.close(data-dismiss="modal") &times;
-              h4.modal-title 網格型網頁
-              p #Web #GridLayout
+              h4.modal-title 艾蜜莉定存股App
+              p ＃介面設計＃Pototype＃使用者研究＃Ios/Android雙平台
             .modal-body
-              img(src="images/work-web2.png", alt="")
-            .modal-footer
-              a(href="http://e032386.github.io/grid-layout/" target="_blank") 連結
-              p 使用Grid layout來做網頁版面設計,風格為美食可愛的感覺,區塊會隨著瀏覽器的尺寸大小而自動地調整及移動。
-              p 使用語言:HTML、CSS、JavaScript(jQuery外掛-Masonry)
-      .modal.fade.work-detail#item3(role="dialog")
-        .modal-dialog.modal-lg
-          .modal-content
-            .modal-header
-              span.close(data-dismiss="modal") &times;
-              h4.modal-title Puzzle Time
-              p #UI #Time #Prototype
-            .modal-body
-              p «月份切換»
-              img(src="images/ui-01.gif", alt="")
-              p «週/月切換»
-              img(src="images/ui-02.gif", alt="")
-              p «選單»
-              img(src="images/ui-03.gif", alt="")
-              p «新增事項»
-              img(src="images/ui-04.gif", alt="")
-              p «事項複製»
-              img(src="images/ui-05.gif", alt="")
-              p «事項移動/刪除»
-              img(src="images/ui-06.gif", alt="")
-              p «事項修改»
-              img(src="images/ui-07.gif", alt="")
-              p «新增任務»
-              img(src="images/ui-08.gif", alt="")
-            .modal-footer
-              a(href="images/ui-flow.jpg" target="_blank") 簡介圖
-              br
-              a(href="https://youtu.be/NyckF-wmBWY" target="_blank") 操作影片
-              p 發想來自在工作的時候,時常都會沒把工作天估好,造成可能會同時間需要驗收,甚至是接回來才發現其他部門的工作量是卡死的。但以往的記事軟體都是自己算時間,然後寫上事項,其實很花時間;如果這時候新增事項是可以用工作天估算,把每一個事項的工作天填完後再新增,這樣子所有案子的時程就一目瞭然,而且再新增上所花的時間也會少很多。
-      .modal.fade.work-detail#item4(role="dialog")
-        .modal-dialog.modal-lg
-          .modal-content
-            .modal-header
-              span.close(data-dismiss="modal") &times;
-              h4.modal-title 一頁式網頁
-              p #Web #Singlepage
-            .modal-body
-              img(src="images/work-web3.png", alt="")
-            .modal-footer
-              a(href="http://e032386.github.io/singlepage-layout/" target="_blank") 連結
-              p 使用現在最流行的Singlepage來做網頁版面設計,整體風格簡潔,屬於個人型的網站。
-              p 使用語言:HTML、CSS、JavaScript
+              .container
+                img(src="images/work-ui2.png", alt="")
+                .row.info
+                  .col-sm-4.modal-subtitle DESCRIPTION
+                  .col-sm-8.modal-text
+                    p 艾蜜莉定存股，是依據小資女艾蜜莉的投資策略，所規劃出的軟體。在之前只有桌機版本，後來依據App的使用情境與體驗，在2017年推出App版本。剛推時出時在Ios的熱門搜尋上出現，並且登上Ios不分類免費下載第13名。
+
+                    p 目前上架一年，累積下載量已超過40萬，每週活躍用戶達3萬人。
+                .row
+                  img.col-sm-12(src="images/ui-flow.png", alt="")
+                .row
+                  img.col-sm-4(src="images/ui-02.gif", alt="")
+                  img.col-sm-4(src="images/ui-04.gif", alt="")
+                  img.col-sm-4(src="images/ui-08.gif", alt="")
+      .modal.fade.work-detail#item2(role="dialog")
       .modal.fade.work-detail#item5(role="dialog")
         .modal-dialog.modal-lg
           .modal-content
@@ -171,7 +114,7 @@ html(lang="zh-hant-tw")
               p 使用語言:HTML、CSS(Bootstrap)、JavaScript(jQuery外掛-filter,Masonry,Scrollr)
   footer
     .container
-      p Copyright © 2016 soso. All Rights Reserved.
+      p Copyright © 2018 soso. All Rights Reserved.
 script(src="js/jquery-3.1.1.min.js")
 script(src="js/bootstrap.min.js")
 script(src="https://unpkg.com/isotope-layout@3.0.1/dist/isotope.pkgd.min.js")
