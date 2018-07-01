@@ -67,8 +67,10 @@ section#works
         vertical-align: middle
         color: $color_text
         text-decoration: none
+        cursor: pointer
         h2
           font-size: 2.4rem
+          font-weight: 500
         p
           line-height: 1.5
       .btn-work-item
@@ -115,12 +117,22 @@ section#works
         font-size: 4rem
         display: inline-block
         letter-spacing: .2rem
-      .modal-title+p
+      p
         margin-left: 32px
         display: inline-block
         font-size: 1.8rem
         color: $color_subtext
         letter-spacing: .1rem
+        font-weight: 300
+      a
+        margin-left: 32px
+        font-size: 1.8rem
+        letter-spacing: .1rem
+        font-weight: 300
+        display: inline-block
+      a:hover
+        text-decoration: none
+        cursor: pointer
     .modal-body
       color: $color_text_a
       font-size: 1.8rem
@@ -146,52 +158,50 @@ section#works
       .row
         margin-top: 40px
 footer
+  margin-top: 30px
   background-color: $color_subtext
   color: #fff
   text-align: center
   padding: 30px 0px
   p
     margin-bottom: 0px
-@media screen and (max-width: 991px)
-  .navbar-header
-    float: none
-  .navbar-default .navbar-toggle
-    display: block
-    &:focus,&:hover
-      background-color: transparent
-  .navbar-collapse
-    margin: 20px 0
-    float: none
-    max-height: 320px
-    background-color: rgb(248, 248, 248)
-  .navbar-collapse.collapse
-    display: none!important
-  .navbar-collapse.collapse.in
-    display: block!important
-  .nav
-    float: none!important
-    margin: 7.5px -15px
-    &>li
-      float: none
-      &>a
-        display: inline-block
-  .nav.navbar-nav>li>a
-    color: $color_text
 @media screen and (max-width: 767px)
-  .container>.navbar-header
-    margin-left: 0px
-  header#banner
-    .container
-      text-align: center
-      color: #fff
-    .wrapper
-      width: 100%
-    .btn-cv
-      color: #fff
-  .skill-bar>.col-sm-3>p
-    font-size: 2.2rem
-    margin-bottom: 30px
-  section#works .work-detail .modal-header>.close
-    top: 24px
-    right: 24px
-    
+  html
+    font-size: 50%
+  nav.navbar
+    padding: 25px 0
+    .navbar-brand
+      .logo_content
+        p
+          display: block
+          padding-left: 16px
+        .sub
+          padding-top: 8px
+  section#works 
+    .work-detail 
+      .modal-header
+        padding: 15px
+        .modal-title
+          font-size: 2.8rem
+          margin-top: 8px
+        p
+          margin-top: 8px
+          margin-left: 0px
+        .close
+          top: 24px
+          right: 24px
+      .modal-body
+        padding: 15px
+        .container
+          padding-left: 0
+          padding-right: 0
+        .modal-text
+          padding-left: 0
+          padding-right: 0
+        .row
+          margin-top: 0
+          img
+            margin-top: 20px
+        .info
+          display: block
+          margin-top: 40px

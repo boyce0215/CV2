@@ -62,9 +62,11 @@ section#works .work-item {
       display: table-cell;
       vertical-align: middle;
       color: #606060;
-      text-decoration: none; }
+      text-decoration: none;
+      cursor: pointer; }
       section#works .work-item .work-item-info a.content h2 {
-        font-size: 2.4rem; }
+        font-size: 2.4rem;
+        font-weight: 500; }
       section#works .work-item .work-item-info a.content p {
         line-height: 1.5; }
     section#works .work-item .work-item-info .btn-work-item {
@@ -111,12 +113,22 @@ section#works .work-detail {
       font-size: 4rem;
       display: inline-block;
       letter-spacing: 0.2rem; }
-    section#works .work-detail .modal-header .modal-title + p {
+    section#works .work-detail .modal-header p {
       margin-left: 32px;
       display: inline-block;
       font-size: 1.8rem;
       color: #9C9C9C;
-      letter-spacing: 0.1rem; }
+      letter-spacing: 0.1rem;
+      font-weight: 300; }
+    section#works .work-detail .modal-header a {
+      margin-left: 32px;
+      font-size: 1.8rem;
+      letter-spacing: 0.1rem;
+      font-weight: 300;
+      display: inline-block; }
+    section#works .work-detail .modal-header a:hover {
+      text-decoration: none;
+      cursor: pointer; }
   section#works .work-detail .modal-body {
     color: #333;
     font-size: 1.8rem;
@@ -143,6 +155,7 @@ section#works .work-detail {
       margin-top: 40px; }
 
 footer {
+  margin-top: 30px;
   background-color: #9C9C9C;
   color: #fff;
   text-align: center;
@@ -150,55 +163,43 @@ footer {
   footer p {
     margin-bottom: 0px; }
 
-@media screen and (max-width: 991px) {
-  .navbar-header {
-    float: none; }
-
-  .navbar-default .navbar-toggle {
-    display: block; }
-    .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
-      background-color: transparent; }
-
-  .navbar-collapse {
-    margin: 20px 0;
-    float: none;
-    max-height: 320px;
-    background-color: #f8f8f8; }
-
-  .navbar-collapse.collapse {
-    display: none !important; }
-
-  .navbar-collapse.collapse.in {
-    display: block !important; }
-
-  .nav {
-    float: none !important;
-    margin: 7.5px -15px; }
-    .nav > li {
-      float: none; }
-      .nav > li > a {
-        display: inline-block; }
-
-  .nav.navbar-nav > li > a {
-    color: #606060; } }
 @media screen and (max-width: 767px) {
-  .container > .navbar-header {
-    margin-left: 0px; }
+  html {
+    font-size: 50%; }
 
-  header#banner .container {
-    text-align: center;
-    color: #fff; }
-  header#banner .wrapper {
-    width: 100%; }
-  header#banner .btn-cv {
-    color: #fff; }
+  nav.navbar {
+    padding: 25px 0; }
+    nav.navbar .navbar-brand .logo_content p {
+      display: block;
+      padding-left: 16px; }
+    nav.navbar .navbar-brand .logo_content .sub {
+      padding-top: 8px; }
 
-  .skill-bar > .col-sm-3 > p {
-    font-size: 2.2rem;
-    margin-bottom: 30px; }
-
-  section#works .work-detail .modal-header > .close {
-    top: 24px;
-    right: 24px; } }
+  section#works .work-detail .modal-header {
+    padding: 15px; }
+    section#works .work-detail .modal-header .modal-title {
+      font-size: 2.8rem;
+      margin-top: 8px; }
+    section#works .work-detail .modal-header p {
+      margin-top: 8px;
+      margin-left: 0px; }
+    section#works .work-detail .modal-header .close {
+      top: 24px;
+      right: 24px; }
+  section#works .work-detail .modal-body {
+    padding: 15px; }
+    section#works .work-detail .modal-body .container {
+      padding-left: 0;
+      padding-right: 0; }
+    section#works .work-detail .modal-body .modal-text {
+      padding-left: 0;
+      padding-right: 0; }
+    section#works .work-detail .modal-body .row {
+      margin-top: 0; }
+      section#works .work-detail .modal-body .row img {
+        margin-top: 20px; }
+    section#works .work-detail .modal-body .info {
+      display: block;
+      margin-top: 40px; } }
 
 /*# sourceMappingURL=style.css.map */
