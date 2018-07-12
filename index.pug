@@ -49,13 +49,34 @@ html(lang="zh-hant-tw")
                 a.content(href="#item3" data-toggle="modal")
                   h2 作品集網站
                   p 第一版作品集網站
-          //- .col-xs-12.col-sm-6.work-item
-          //-   img(src="images/work-web4.png", alt="")
-          //-   .work-item-info
-          //-     .cell
-          //-       a.content(href="#item4" data-toggle="modal")
-          //-         h2 聊天機器人
-          //-         p 模擬Chatbot的使用情境
+          .col-xs-12.col-sm-6.work-item
+            img(src="images/work_ui4.png", alt="")
+            .work-item-info
+              .cell
+                a.content(href="#item4" data-toggle="modal")
+                  h2 聊天機器人
+                  p 模擬Chatbot的使用情境
+          .col-xs-12.col-sm-6.work-item
+            img(src="images/work_ui5.png", alt="")
+            .work-item-info
+              .cell
+                a.content(href="#item5" data-toggle="modal")
+                  h2 理財寶瘋拉霸
+                  p 一個活動網頁
+          .col-xs-12.col-sm-6.work-item
+            img(src="images/work_ui6.png", alt="")
+            .work-item-info
+              .cell
+                a.content(href="#item6" data-toggle="modal")
+                  h2 原創社
+                  p 一間虛構的出版社平台的識別設計
+          .col-xs-12.col-sm-6.work-item
+            img(src="images/work_ui7.png", alt="")
+            .work-item-info
+              .cell
+                a.content(href="#item7" data-toggle="modal")
+                  h2 平面視覺
+                  p 一些平面視覺設計的海報
       .modal.fade.work-detail#item1(role="dialog")
         .modal-dialog
           .modal-content
@@ -112,7 +133,7 @@ html(lang="zh-hant-tw")
             .modal-header
               span.close(data-dismiss="modal") &times;
               h4.modal-title 作品集網站
-              p ＃介面設計＃Pototype
+              p ＃Web ＃Singlepage ＃galley ＃Bootstrap ＃RWD
               a(href="https://e032386.github.io/CV/") 前往看看
             .modal-body
               .container
@@ -128,28 +149,82 @@ html(lang="zh-hant-tw")
                   .col-sm-4.modal-subtitle PROCESS
                   .col-sm-8.modal-text
                     p 試著畫wireframe開始,規劃網頁元素的區塊以及在不同尺寸上的呈現樣式。再將實際的圖與文字套上,變成mockup。並以Bootstrap為基礎,再套上filter,Masonry,Parallax Scrolling等效果。
-      //- .modal.fade.work-detail#item3(role="dialog")
-      //-   .modal-dialog
-      //-     .modal-content
-      //-       .modal-header
-      //-         span.close(data-dismiss="modal") &times;
-      //-         h4.modal-title 聊天機器人
-      //-         p #Web #Singlepage #galley #Bootstrap #RWD
-      //-         a(href="https://e032386.github.io/CV/") 前往看看
-      //-       .modal-body
-      //-         .container
-      //-           img(src="images/work-web4.png", alt="")
-      //-           .row.info
-      //-             .col-sm-4.modal-subtitle DESCRIPTION
-      //-             .col-sm-8.modal-text
-      //-               p 
-      //-           .row
-      //-             img.col-sm-12(src="images/wireframe.png", alt="")
-      //-             img.col-sm-12(src="images/mockup.png", alt="")
-      //-           .row.info
-      //-             .col-sm-4.modal-subtitle PROCESS
-      //-             .col-sm-8.modal-text
-      //-               p 試著畫wireframe開始,規劃網頁元素的區塊以及在不同尺寸上的呈現樣式。再將實際的圖與文字套上,變成mockup。並以Bootstrap為基礎,再套上filter,Masonry,Parallax Scrolling等效果。
+      .modal.fade.work-detail#item4(role="dialog")
+        .modal-dialog
+          .modal-content
+            .modal-header
+              span.close(data-dismiss="modal") &times;
+              h4.modal-title 聊天機器人
+              p ＃介面設計＃Pototype
+              a(href="https://share.protopie.io/azJSGb49FQZ") 前往看看
+            .modal-body
+              .container
+                img(src="images/work_ui4.png", alt="")
+                .row.info
+                  .col-sm-4.modal-subtitle DESCRIPTION
+                  .col-sm-8.modal-text
+                    p 針對目前流行的chatbot，設計介面與模擬操作環境。
+      .modal.fade.work-detail#item5(role="dialog")
+        .modal-dialog
+          .modal-content
+            .modal-header
+              span.close(data-dismiss="modal") &times;
+              h4.modal-title 理財寶瘋拉霸
+              p ＃Webdesgin ＃Singlepage ＃RWD
+            .modal-body
+              .container
+                img(src="images/work_ui5.png", alt="")
+                .row.info
+                  .col-sm-4.modal-subtitle DESCRIPTION
+                  .col-sm-8.modal-text
+                    p 一個活動型網頁，讓消費者可以用購物金，來換取獎品。
+                .row
+                  img.col-sm-12(src="images/ui5_01.png", alt="")
+      .modal.fade.work-detail#item6(role="dialog")
+        .modal-dialog
+          .modal-content
+            .modal-header
+              span.close(data-dismiss="modal") &times;
+              h4.modal-title 原創社
+              p ＃CIS
+            .modal-body
+              .container
+                img(src="images/work_ui6.png", alt="")
+                .row.info
+                  .col-sm-4.modal-subtitle DESCRIPTION
+                  .col-sm-8.modal-text
+                    p (以下為虛構)
+                    p 為了讓台灣本土的新世代作家所創立的平台,立志於為年輕新一代 提供更多資源、發聲的機會。
+                .row
+                  img.col-sm-12(src="images/ui6_01.jpg", alt="")
+                  img.col-sm-12(src="images/ui6_02.jpg", alt="")
+                  img.col-sm-12(src="images/ui6_03.jpg", alt="")
+                  img.col-sm-12(src="images/ui6_04.jpg", alt="")
+                  img.col-sm-12(src="images/ui6_05.jpg", alt="")
+                  img.col-sm-12(src="images/ui6_06.jpg", alt="")
+                  img.col-sm-12(src="images/ui6_07.jpg", alt="")
+                  img.col-sm-12(src="images/ui6_08.jpg", alt="")
+                  img.col-sm-12(src="images/ui6_09.jpg", alt="")
+                  img.col-sm-12(src="images/ui6_10.jpg", alt="")
+                  img.col-sm-12(src="images/ui6_11.jpg", alt="")
+                  img.col-sm-12(src="images/ui6_12.jpg", alt="")
+      .modal.fade.work-detail#item7(role="dialog")
+        .modal-dialog
+          .modal-content
+            .modal-header
+              span.close(data-dismiss="modal") &times;
+              h4.modal-title 平面視覺
+              p ＃Illustrator
+            .modal-body
+              .container
+                img(src="images/work_ui7.png", alt="")
+                .row.info
+                  .col-sm-4.modal-subtitle DESCRIPTION
+                  .col-sm-8.modal-text
+                    p 目前正在嘗試做平面設計，這是目前還在摸索的各種不同風格。
+                .row
+                  img.col-sm-12(src="images/ui7_01.png", alt="")
+                  img.col-sm-12(src="images/ui7_02.png", alt="")
   footer
     .container
       p Copyright © 2018 soso. All Rights Reserved.
